@@ -1,4 +1,4 @@
-# Bhavesh S. Jain - Portfolio Website
+# Bhavesh S Jain - Portfolio Website
 
 This is a personal portfolio website designed to showcase my skills, experiences, and projects. It provides a professional platform for potential employers and collaborators to learn more about me.
 
