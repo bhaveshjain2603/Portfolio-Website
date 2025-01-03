@@ -203,6 +203,10 @@ nav{
     display: flex;
     gap: 20px;
 }
+.featured-text-btn a{
+    text-decoration: none;
+    color: white;
+}
 .featured-text-btn>.blue-btn{
     background: var(--first-color);
     color: var(--color-white);
