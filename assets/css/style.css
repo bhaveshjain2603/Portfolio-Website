@@ -375,7 +375,7 @@ h3{
     display: flex;
     width: 100%;
     justify-content: center;
-    gap: 8rem;
+    gap: 3rem;
     flex-wrap: wrap;
 }
 .project-box{
@@ -587,7 +587,7 @@ footer{
 	}
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 980px) {
     .nav-button{
         display: none;
     }
