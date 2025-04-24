@@ -245,22 +245,22 @@
                             <p><i class="uil uil-phone"></i> Mobile: +91 94487 93711</p>
                         </div>
                     </div>
-                    <!-- <div class="col">
-                        <form action="/contact" method="post">
+                    <div class="col">
+                        <form id="contactForm" onsubmit="handleSubmit(event)">
                             <div class="form-control">
                                 <div class="form-inputs">
-                                    <input type="text" name="name" class="input-field" placeholder="Name">
-                                    <input type="text" name="email" class="input-field" placeholder="Email">
+                                    <input type="text" id="name" name="name" class="input-field" placeholder="Name">
+                                    <input type="email" id="email" name="email" class="input-field" placeholder="Email">
                                 </div>
                                 <div class="text-area">
-                                    <textarea placeholder="Message"></textarea>
+                                    <textarea id="message" name="message" placeholder="Message"></textarea>
                                 </div>
                                 <div class="form-button">
-                                    <button class="btn">Send <i class="uil uil-message"></i></button>
+                                    <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
                                 </div>
                             </div>
                         </form>
-                    </div> -->
+                    </div>
                 </div>
             </section>
 
