@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 /* ----- NAVIGATION BAR FUNCTION ----- */
 function myMenuFunction(){
   var menuBtn = document.getElementById("myNavMenu");
@@ -108,7 +110,7 @@ async function handleSubmit(event) {
     };
 
     try {
-        const response = await fetch('http://localhost:5000/contact', {
+        const response = await fetch(`${process.env.BACKEND_URL}/contact`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
