@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 /* ----- NAVIGATION BAR FUNCTION ----- */
 function myMenuFunction(){
   var menuBtn = document.getElementById("myNavMenu");
