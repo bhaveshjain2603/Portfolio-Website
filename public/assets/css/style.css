@@ -536,20 +536,33 @@ textarea{
 #toast-container {
   position: fixed;
   top: 20px;
-  left: 45%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  pointer-events: none; /* Allow clicks through container */
 }
 
 .toast {
-  min-width: 250px;
+  pointer-events: auto;
+  max-width: 90%;
+  width: auto;
   margin-top: 10px;
   padding: 15px 20px;
   background-color: #333;
   color: #fff;
   border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   opacity: 0;
   transform: translateY(-20px);
   animation: fadeInUp 0.5s forwards, fadeOut 0.5s forwards 3s;
+  text-align: center;
+  font-size: 1rem;
+  word-break: break-word;
 }
 
 @keyframes fadeInUp {
@@ -565,6 +578,7 @@ textarea{
     transform: translateY(-20px);
   }
 }
+  
 
 /* ----- FOOTER BOX ----- */
 footer{
