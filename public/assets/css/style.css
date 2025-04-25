@@ -536,6 +536,7 @@ textarea{
 #toast-container {
   position: fixed;
   top: 20px;
+  left: 45%;
   z-index: 9999;
 }
 
