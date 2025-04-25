@@ -108,7 +108,7 @@ async function handleSubmit(event) {
     };
 
     try {
-        const response = await fetch(`${process.env.BACKEND_URL}/contact`, {
+        const response = await fetch(`https://portfolio-website-6ph8.onrender.com}/contact`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
