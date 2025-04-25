@@ -7,7 +7,7 @@ require('dotenv').config();
 
 const app = express();
 app.use(cors({
-    origin: '*',
+    origin: 'https://sbk-portfolio.vercel.app',
     methods: ['GET', 'POST'],
     credentials: true,
 }));
