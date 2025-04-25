@@ -49,7 +49,6 @@ const transporter = nodemailer.createTransport({
 app.post('/contact', async (req, res) => {
     try {
         const { name, email, message } = req.body;
-        console.log(req.body);
         
         // Validate input
         if (!name || !email || !message) {
