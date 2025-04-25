@@ -139,8 +139,4 @@ function showToast(message, isSuccess = true) {
 
   toastContainer.appendChild(toast);
 
-  // Remove toast after animation
-  setTimeout(() => {
-    toast.remove();
-  }, 4000);
 }
