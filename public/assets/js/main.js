@@ -117,7 +117,7 @@ async function handleSubmit(event) {
         });
 
         const data = await response.json();
-        alert(data.message);
+        showToast(data.message, true); // success toast
         
         if (response.ok) {
             // Clear form on success
@@ -125,6 +125,22 @@ async function handleSubmit(event) {
         }
     } catch (error) {
         console.error('Error:', error);
-        alert('Failed to send message');
+        showToast("Failed to send message", false);
     }
+}
+
+function showToast(message, isSuccess = true) {
+  const toastContainer = document.getElementById("toast-container");
+  const toast = document.createElement("div");
+
+  toast.className = "toast";
+  toast.style.backgroundColor = isSuccess ? "#28a745" : "#dc3545"; // green or red
+  toast.textContent = message;
+
+  toastContainer.appendChild(toast);
+
+  // Remove toast after animation
+  setTimeout(() => {
+    toast.remove();
+  }, 4000);
 }
